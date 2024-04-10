@@ -1,0 +1,118 @@
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  margin: -1px 0 0 -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  color: linear-gradient(75deg, #000, #FFF);
+}
+
+.cell::before {
+  animation: pop .3s linear 1;
+}
+
+.cell.fa-circle {
+  font-size: 3.3em;
+  animation: pulsate 0.71s ease-in-out infinite alternate;
+}
+
+.cell.fa-xmark {
+  animation: pulsate-blue 0.71s ease-in-out infinite alternate;
+}
+
+.cell.fa-xmark {
+  color: #fff;
+  text-shadow:
+    0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 3px #fff,
+    0 0 4px #90f,
+    0 0 5px #90f,
+    0 0 6px #90f,
+    0 0 6px #90f,
+    0 0 8px #90f;
+}
+
+.cell.fa-circle {
+  color: #fff;
+  text-shadow:
+    0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 3px #fff,
+    0 0 4px #f09,
+    0 0 5px #f09,
+    0 0 6px #f09,
+    0 0 9px #f09,
+    0 0 15px #f09;
+}
+
+@keyframes pulsate {
+
+  100% {
+
+    text-shadow:
+      0 0 1px #fff,
+      0 0 3px #fff,
+      0 0 7px #fff,
+      0 0 20px #f09,
+      0 0 40px #f09,
+      0 0 50px #f09,
+      0 0 60px #f09,
+      0 0 80px #f09;
+
+  }
+
+  0% {
+
+    text-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 5px #fff,
+      0 0 15px #f09,
+      0 0 33px #f09,
+      0 0 59px #f09,
+      0 0 55px #f09,
+      0 0 75px #f09;
+
+  }
+}
+
+@keyframes pulsate-blue {
+
+  100% {
+
+    text-shadow:
+      0 0 1px #fff,
+      0 0 3px #fff,
+      0 0 7px #fff,
+      0 0 20px #90f,
+      0 0 40px #90f,
+      0 0 50px #90f,
+      0 0 60px #90f,
+      0 0 80px #90f;
+
+  }
+
+  0% {
+
+    text-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 5px #fff,
+      0 0 15px #90f,
+      0 0 33px #90f,
+      0 0 59px #90f,
+      0 0 55px #90f,
+      0 0 75px #90f;
+
+  }
+}
+
+@keyframes pop {
+  50% {
+    transform: scale(1.2);
+  }
+}

@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../node/first"
+		},
+		{
+			"path": "../../node/second"
+		},
+		{
+			"path": "../../node/third"
+		}
+	],
+	"settings": {}
+}
