@@ -20,3 +20,7 @@ body {
     background-position: 0% 50%;
   }
 }
+
+* {
+  text-decoration: none;
+}

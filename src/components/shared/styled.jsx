@@ -100,7 +100,11 @@ export const TransparentButton = styled(Button)`
   }
 `;
 
+
 export const TopBar = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   position: fixed;
   top: 0;
   right: 0;
